@@ -1,14 +1,16 @@
 import React from "react";
-import { Switch, Route, BrowserRouter, Link } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Header from "./header";
 import Sidebar from "./components/Sidebar";
+import Home from "./components/Home";
+import Headline from "./components/Headline";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
-        <Header appName="News App" />
+        <Header />
         <div className="container">
           <div className="sidebar">
             <Sidebar />
@@ -16,10 +18,10 @@ function App() {
           <div className="news">
             <Switch>
               <Route exact path="/">
-                home
+                <Home />
               </Route>
               <Route exact path="/headlines">
-                headline
+                <Headline />
               </Route>
             </Switch>
           </div>

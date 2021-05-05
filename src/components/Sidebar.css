@@ -1,0 +1,42 @@
+/* .home {
+  border-bottom: 1px solid black;
+} */
+
+.menu-border {
+  border-bottom: 1px solid black;
+}
+.slideBar {
+  margin-top: 3.2%;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(47, 158, 172);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+#home {
+  padding: 9px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  margin: 20px solid #4caf50;
+  /* border: 1px; */
+}
+#headline {
+  padding: 20px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+#headline:hover {
+  color: #f1f1f1;
+}
+#home:hover {
+  color: #f1f1f1;
+}

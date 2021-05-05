@@ -1,18 +1,36 @@
 import React from "react";
-import "./header.css";
-type HeaderProps = {
-  appName: string;
-};
-const Header = (props: HeaderProps) => {
+// import "./header.css";
+import "./App.css";
+// type HeaderProps = {
+//   appName: string;
+// };
+const Header = () => {
   return (
-    <div className="navigationBar">
-      {/* <div className="logo"> */}
+    <div
+      className="navigationBar"
+      style={{
+        width: "100%",
+        height: "50px",
+        background: "grey",
+        display: "flex",
+        // justifyContent: "space-between",
+      }}
+    >
       <div className="new">
-        <h5>News</h5>
-        {/* </div> */}
+        <h3
+          style={{
+            paddingLeft: "35px",
+            paddingBottom: "150px",
+            color: "white",
+          }}
+        >
+          News
+        </h3>
       </div>
-      <div>Contact</div>
-      <div className="menu"></div>
+
+      <h3 style={{ position: "relative", left: "89%", color: "white" }}>
+        Contact
+      </h3>
     </div>
   );
 };

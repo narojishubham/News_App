@@ -1,18 +1,23 @@
 import React from "react";
-import { Switch, Route, BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Sidebar.css";
 
-function Sidebar() {
+const Sidebar = () => {
   return (
-    <div>
-      <div>
-        <Link to="/">home</Link>
+    <div className="slideBar ">
+      <div className="home menu-border">
+        <Link to="/" id="home">
+          Home
+        </Link>
       </div>
 
-      <div>
-        <Link to="/headlines">headlines</Link>
+      <div className="headline menu-border">
+        <Link to="/headlines" id="headline">
+          Headlines
+        </Link>
       </div>
     </div>
   );
-}
+};
 
 export default Sidebar;
