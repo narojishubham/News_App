@@ -1,36 +1,16 @@
 import React from "react";
-// import "./header.css";
-import "./App.css";
-// type HeaderProps = {
-//   appName: string;
-// };
+import Search from "./components/Search";
+import "./header.css";
+
 const Header = () => {
   return (
-    <div
-      className="navigationBar"
-      style={{
-        width: "100%",
-        height: "50px",
-        background: "grey",
-        display: "flex",
-        // justifyContent: "space-between",
-      }}
-    >
-      <div className="new">
-        <h3
-          style={{
-            paddingLeft: "35px",
-            paddingBottom: "150px",
-            color: "white",
-          }}
-        >
-          News
-        </h3>
+    <div className="navigatonaBar">
+      <div className="news">
+        <h3>News</h3>
       </div>
 
-      <h3 style={{ position: "relative", left: "89%", color: "white" }}>
-        Contact
-      </h3>
+      <Search />
+      <h3 className="contact">User</h3>
     </div>
   );
 };

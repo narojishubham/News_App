@@ -1,0 +1,23 @@
+.new {
+  width: 100%;
+}
+.search {
+  /* display: flex; */
+  /* padding-right: 55%; */
+  /* margin-top: 14px;
+  margin-right: 350%; */
+  /* justify-content: center; */
+  padding-right: 15%;
+  margin-top: 14px;
+}
+input {
+  width: 30%;
+  height: 53%;
+  margin: 5px;
+}
+.searchButton {
+  padding-left: 217px;
+  display: flex;
+  height: 32%;
+  margin-top: -27px;
+}

@@ -1,12 +1,39 @@
-.navigationBar {
-  height: "50px";
-  display: "flex";
-  justify-content: space-between;
+.navigatonaBar {
+  width: 100%;
+  height: 70px;
   background-color: grey;
+  display: flex;
+  position: fixed;
+  /* justify-content: space-between; */
 }
 
-h3 {
+/* h3 {
   padding-left: "5px";
   padding-bottom: "50px";
   color: "blue";
+} */
+.news {
+  padding-left: 20px;
 }
+.contact {
+  padding-right: 20px;
+}
+
+/* search box */
+/* .search {
+  padding-right: 15%;
+  margin-top: 14px;
+}
+input {
+  width: 350%;
+  height: 60%;
+  box-sizing: border-box;
+  margin: 5px;
+}
+.searchButton {
+  padding-right: 447px;
+  display: flex;
+  height: 48%;
+  margin-top: 19px;
+  margin-left: 0.42%;
+} */

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Headline.css";
+import HeadlineCard from "./HeadlineCard";
 
 const Headline = () => {
   const [articles, setArticles] = useState<any>([]);
@@ -16,23 +17,13 @@ const Headline = () => {
 
   return (
     <div className="row">
-      <h2>Top Headlines</h2>
-
-      <div className="column">
+      <div>
+        <h2>Headlines</h2>
+      </div>
+      <div>
         {articles.map((article: any) => {
           console.log(article);
-          return (
-            <div className="card">
-              <div>
-                <img src={article.urlToImage} className="news-image" />
-              </div>
-              <div>
-                <h3>{article.title}</h3>
-                <p>{article.description}</p>
-                <p>{article.url}</p>
-              </div>
-            </div>
-          );
+          return <HeadlineCard article={article} />;
         })}
       </div>
     </div>

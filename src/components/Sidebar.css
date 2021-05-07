@@ -2,13 +2,15 @@
   border-bottom: 1px solid black;
 } */
 
-.menu-border {
+/* .menu-border {
   border-bottom: 1px solid black;
-}
+} */
 .slideBar {
-  margin-top: 3.2%;
+  margin-top: 4.5%;
   height: 100%;
-  width: 160px;
+  /* width: 220px; */
+  width: 18vw;
+
   position: fixed;
   z-index: 1;
   top: 0;
@@ -18,17 +20,18 @@
   padding-top: 20px;
 }
 
-#home {
-  padding: 9px 8px 6px 16px;
+#home1 {
+  /* padding: 0px 0px 0px 0px; */
+  text-align: center;
   text-decoration: none;
   font-size: 25px;
   color: black;
   display: block;
-  margin: 20px solid #4caf50;
-  /* border: 1px; */
+  margin-top: -40px;
 }
 #headline {
-  padding: 20px 8px 6px 16px;
+  padding: 20px 0px 0px;
+  text-align: center;
   text-decoration: none;
   font-size: 25px;
   color: black;
@@ -37,6 +40,6 @@
 #headline:hover {
   color: #f1f1f1;
 }
-#home:hover {
+#home1:hover {
   color: #f1f1f1;
 }

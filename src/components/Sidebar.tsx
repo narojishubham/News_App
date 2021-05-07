@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div className="slideBar ">
       <div className="home menu-border">
-        <Link to="/" id="home">
+        <Link to="/" id="home1">
           Home
         </Link>
       </div>
