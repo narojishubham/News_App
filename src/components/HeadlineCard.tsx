@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../image/image.png";
 type HeadlineCardProps = {
   article: any;
 };
@@ -28,7 +29,7 @@ const HeadlineCard = ({ article }: HeadlineCardProps) => {
       </div>
       {/* ------- image ------- */}
       <div className="headlineCard-image">
-        <img src={article.urlToImage} className="headlineImage" />
+        <img src={image} className="headlineImage" />
       </div>
     </div>
   );

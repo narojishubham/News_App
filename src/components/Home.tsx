@@ -2,11 +2,13 @@ import React, { useState, useEffect, useContext } from "react";
 import { SearchedUsers } from "../context/Context";
 import "./Home.css";
 import HomeCards from "./HomeCards";
+import Loader from "react-loader-spinner";
 
 const Home = () => {
   const { search } = useContext(SearchedUsers);
-  console.log(search, "testing search");
+  // console.log(search, "testing search");
   const [articles, setArticles] = useState<any>([]);
+  const [loader, setLoader] = useState(false);
   useEffect(() => {
     setArticles(search);
   }, [search]);
@@ -18,6 +20,7 @@ const Home = () => {
       .then((json) => {
         setArticles([...json.articles]);
         // console.log(json.articles);
+        setLoader(true);
       });
   }, []);
 
@@ -27,10 +30,23 @@ const Home = () => {
         <h2>Today's News</h2>
       </div>
       <div>
-        {articles.map((article: any) => {
-          // console.log(article);
-          return <HomeCards article={article} />;
-        })}
+        {loader ? (
+          <div>
+            {articles.length !== 0 ? (
+              <div>
+                {articles.map((article: any) => {
+                  return <HomeCards article={article} />;
+                })}
+              </div>
+            ) : (
+              <div>Please enter valid input</div>
+            )}
+          </div>
+        ) : (
+          <div className="home-loader">
+            <Loader type="Bars" color="#00BFFF" height={80} width={80} />
+          </div>
+        )}
       </div>
     </div>
   );

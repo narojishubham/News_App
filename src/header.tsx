@@ -8,7 +8,6 @@ const Header = () => {
       <div className="news">
         <h3>News</h3>
       </div>
-
       <Search />
       <h3 className="contact">User</h3>
     </div>

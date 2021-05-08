@@ -25,6 +25,10 @@ p {
   position: relative;
   left: 20px;
 } */
+.home-loader {
+  display: flex;
+  justify-content: space-around;
+}
 .home {
   padding-top: 59px;
   padding-left: 15px;

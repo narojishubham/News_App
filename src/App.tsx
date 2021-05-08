@@ -5,7 +5,6 @@ import Header from "./header";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
 import Headline from "./components/Headline";
-// import SearchPage from "./components/SearchPage";
 import { SearchedUsers } from "./context/Context";
 
 function App() {
@@ -28,9 +27,7 @@ function App() {
                   <Route exact path="/headlines">
                     <Headline />
                   </Route>
-                  <Route exact path="/search?keyWord=searchWord">
-                    {/* <SearchPage /> */}
-                  </Route>
+                  {/* <Route exact path="/search?keyWord=searchWord"></Route> */}
                 </Switch>
               </div>
             </div>
